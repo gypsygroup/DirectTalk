@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qj.directtalk.MainActivity">
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/toggleGo"
+        android:checked="false"
+        android:textOff="Toggle GO"
+        android:textOn="Toggle GO" />
+
+    <Button
+        android:text="Discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toggleGo"
+        android:layout_toRightOf="@+id/toggleGo"
+        android:layout_toEndOf="@+id/toggleGo"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp"
+        android:id="@+id/discoverButton"
+        android:onClick="startDiscovery" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toggleGo"
+        android:layout_alignLeft="@+id/toggleGo"
+        android:layout_alignStart="@+id/toggleGo"
+        android:layout_marginTop="43dp"
+        android:id="@+id/fragmentContainer">
+
+    </FrameLayout>
+</RelativeLayout>
